@@ -12,6 +12,8 @@ def main():
         quick_picks_list = []
         for i in range(MAX_NUMBER):
             numbers = random.randint(MIN_PICK, MAX_PICK)
+            while numbers in quick_picks_list:
+                numbers = random.randint(1, 45)
             quick_picks_list.append(numbers)
         quick_picks_list.sort()
         print(*quick_picks_list)
