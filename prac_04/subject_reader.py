@@ -30,8 +30,9 @@ def get_data():
 
 
 def subjects_formatter(data):
+    """Takes subject data and displays it in readable format."""
     for subject in data:
-        print("{:1} Is taught by {:2} and has {:3} students".format(*subject))
+        print("{} Is taught by {} and has {} students".format(*subject))
 
 
 main()
