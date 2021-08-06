@@ -10,5 +10,18 @@ def main():
     print("The largest number is", max(numbers))
     print(f"The average number is", sum(numbers) / len(numbers))
 
+    shady_authenticator()
+
+
+def shady_authenticator():
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+    get_name = input("What is your username? ")
+    if get_name in usernames:
+        print("Access Granted")
+    else:
+        print("Access Denied")
+
 
 main()
