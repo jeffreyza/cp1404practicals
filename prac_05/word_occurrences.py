@@ -13,3 +13,5 @@ for word in words:
     except KeyError:
         words_dictionary[word] = 1
 
+words_list = list(words_dictionary.keys())
+words_list.sort()
