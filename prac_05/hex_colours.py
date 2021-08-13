@@ -4,6 +4,14 @@ Jeffrey Timms
 Hexadecimal colour picker
 """
 
-COLOR_HEX = {"BlanchedAlmond": "#ffebcd", "Brown": "#a52a2a", "CadetBlue": "#5f9ea0", "Coral": "#ff7f50",
-             "CornflowerBlue": "#6495ed", "DarkGreen": "#006400", "DarkOrange": "#ff8c00", "DarkViolet": "#9400d3",
-             "GhostWhite": "#f8f8ff", "Goldenrod": "#daa520"}
+COLOR_HEX = {"blanchedalmond": "#ffebcd", "brown": "#a52a2a", "cadetblue": "#5f9ea0", "coral": "#ff7f50",
+             "cornflowerblue": "#6495ed", "darkgreen": "#006400", "darkorange": "#ff8c00", "darkviolet": "#9400d3",
+             "ghostwhite": "#f8f8ff", "goldenrod": "#daa520"}
+
+color_choice = input("What color would you like to get the hexadecimal code for? ").lower()
+while color_choice != "":
+    if color_choice in COLOR_HEX:
+        print(color_choice, "hexadecimal is", COLOR_HEX[color_choice])
+    else:
+        print("Invalid color choice!")
+    color_choice = input("What color would you like to get the hexadecimal code for? ")
