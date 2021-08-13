@@ -15,3 +15,7 @@ for word in words:
 
 words_list = list(words_dictionary.keys())
 words_list.sort()
+
+words_max_length = max((len(word) for word in words_list))
+for word in words_list:
+    print("{:{}} : {}".format(word, words_max_length, words_dictionary[word]))
