@@ -14,4 +14,4 @@ while color_choice != "":
         print(color_choice, "hexadecimal is", COLOR_HEX[color_choice])
     else:
         print("Invalid color choice!")
-    color_choice = input("What color would you like to get the hexadecimal code for? ")
+    color_choice = input("What color would you like to get the hexadecimal code for? ").lower()
