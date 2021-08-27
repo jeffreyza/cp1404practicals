@@ -1,3 +1,4 @@
+from datetime import datetime
 
 class GuitarSpecs:
     def __init__(self, name="", year=0, cost=0):
@@ -7,6 +8,12 @@ class GuitarSpecs:
 
     def __str__(self) -> str:
         return f"{self.name} ({self.year}) : ${self.cost:2f}"
+
+
+    def get_age(self):
+        current_year = datetime.now().year
+        return current_year - self.year
+
 
 
 
