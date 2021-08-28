@@ -8,7 +8,7 @@ class GuitarSpecs:
         self.cost = cost
 
     def __str__(self) -> str:
-        return f"{self.name} ({self.year}) : ${self.cost:2f}"
+        return f"{self.name} ({self.year}) : ${self.cost:.2f}"
 
     def get_age(self):
         current_year = datetime.now().year
