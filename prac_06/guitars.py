@@ -13,7 +13,12 @@ def main():
         print(f"{add_guitars} added.")
         name = input("Name: ")
 
-
+    print("These are my guitars:")
+    for i, guitar in enumerate(guitars, 1):
+        vintage = ""
+        if guitar.is_vintage():
+            vintage = "(Vintage)"
+        print(f"Guitar {i}: {guitar.name}, {guitar.year},worth: ${guitar.cost:.2f} {vintage}")
 
 
 main()
