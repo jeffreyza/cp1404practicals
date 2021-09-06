@@ -4,17 +4,21 @@ BoxLayout:
         orientation: 'horizontal'
         TextInput:
             id: miles_input
+            on_text: app.km_conversion()
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: "Up"
+                on_press: app.handle_increment(1)
             Button:
                 text: "Down"
-    BoxLayout:
-        orientation: 'horizontal'
-        Button:
-            text: 'convert m to km'
-    BoxLayout:
-        orientation: 'horizontal'
-        Label:
-            text: 'henlo'
+                on_press: app.handle_increment(-1)
+    #Button:
+        #text: 'convert mi to km'
+        #on_press: app.km_conversion()
+
+    Label:
+        id: km_output
+        text: app.km_output
+        color: (1,1,0,1)
+        text: app.km_output
