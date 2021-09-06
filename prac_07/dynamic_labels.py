@@ -13,7 +13,7 @@ class DynamicLabels(App):
     def build(self):
         """Build and display program"""
         self.title = "Dynamic Name Labels"
-        self.root = Builder.load_file('dynamic_widgets.kv')
+        self.root = Builder.load_file('dynamic_labels.kv')
         self.create_labels()
         return self.root
 
