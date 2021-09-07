@@ -17,7 +17,7 @@ class ConvertMilesToKM(App):
         return self.root
 
     def validate_number(self):
-        """Validates and returns 0.0 if not a valid number"""
+        """Validate input number"""
         if self.root.ids.miles_input.text == '':
             return 0.0
         else:
@@ -31,6 +31,7 @@ class ConvertMilesToKM(App):
         """increment the user input number by 1 or -1 based on button selection"""
         number_to_increment = self.validate_number()
         self.root.ids.miles_input.text = str(number_to_increment + number)
+        self.km_conversion()
 
     def km_conversion(self):
         """Convert input miles to KM based on 1 mile = 1.60934"""
