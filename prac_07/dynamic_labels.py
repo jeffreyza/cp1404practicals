@@ -21,7 +21,6 @@ class DynamicLabels(App):
         """Loop through names list and add as label"""
         for name in self.names_list:
             self.root.ids.main.add_widget(Label(text=name))
-        return
 
 
 DynamicLabels().run()
