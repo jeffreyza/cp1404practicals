@@ -13,7 +13,7 @@ class BoxLayoutDemo(App):
 
     def clear(self):
         self.root.ids.output_label.text = ""
-        self.root.ids.input_name.text = ""
+        self.root.ids.input_name.text = "Enter your name"
 
 
 BoxLayoutDemo().run()
