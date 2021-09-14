@@ -11,4 +11,6 @@ def main():
             #get taxi method
         if choice == "d":
             #get drive method
-
+        else:
+            print("Invalid menu choice")
+        choice = input("Enter choice: ").lower()
