@@ -6,4 +6,5 @@ os.chdir('FilesToSort')
 for filename in os.listdir('.'):
     #    print(pathlib.Path(filename).suffix)
     extension = os.path.splitext(filename)[1][1:]
-    os.mkdir(extension)
+    if not os.path.exists(extension):
+        os.mkdir(extension)
