@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Files To Sort v1
+Jeffrey Timms
+"""
+
 import shutil
 import os
 import pathlib
@@ -10,4 +16,12 @@ for filename in os.listdir('.'):
         if extension != "":
             os.mkdir(extension)
 
-extensions = ["doc", "docx", "gif", "jpg", "png", "txt", "xls", "xlsx"]
+extension_list = ["doc", "docx", "gif", "jpg", "png", "txt", "xls", "xlsx"]
+
+'''Verifies that the extension is not an empty string. Move file to designated folder
+based on extension'''
+for filename in os.listdir('.'):
+    extension = os.path.splitext(filename)[1][1:]
+    if extension != "":
+        if filename.endswith(extension):
+            shutil.move(filename, str(extension))
