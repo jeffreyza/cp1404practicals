@@ -1,13 +1,12 @@
 """
-CP1404/CP5632 Practical
-Demos of various os module examples
+Cleanup Files
+Jeffey Timms
 """
 import shutil
 import os
 
 
 def main():
-    """Demo os module functions."""
     print("Starting directory is: {}".format(os.getcwd()))
 
     # Change to desired directory
@@ -17,7 +16,8 @@ def main():
             new_file_name = get_fixed_filename(filename)
             print(f"Renamed {filename} to {new_file_name}")
             name = os.path.join(directory_name, filename)
-            new_name = os.path.join(directory_name, name)
+            new_name = os.path.join(directory_name, new_file_name)
+            os.rename(name, new_name)
 
 
 def get_fixed_filename(filename):
