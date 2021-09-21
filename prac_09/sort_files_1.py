@@ -16,7 +16,6 @@ for filename in os.listdir('.'):
         if extension != "":
             os.mkdir(extension)
 
-extension_list = ["doc", "docx", "gif", "jpg", "png", "txt", "xls", "xlsx"]
 
 '''Verifies that the extension is not an empty string. Move file to designated folder
 based on extension'''
