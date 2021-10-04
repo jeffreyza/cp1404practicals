@@ -53,7 +53,6 @@ run_tests()
 doctest.testmod()
 
 
-# TODO: 5. Write and test a function to format a phrase as a sentence,
 def phrase_format(phrase):
     """    Determine if function is working correctly.
     >>> phrase_format("hello")
